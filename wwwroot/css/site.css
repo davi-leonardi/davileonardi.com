@@ -23,11 +23,13 @@ body {
     --cyberpunk-blue: #00f0ff;
     --thunder-yellow: #ffff33;
     --silver-color: #C0C0C0;
+    --cyberpunk-blue2: #08fdd8;
+    --cyberpunk-blue3: #1FFCF6;
 }
 
 .sidenav {
     height: 100%;
-    width: 160px;
+    width: 150px;
     position: fixed;
     z-index: 1;
     top: 0;
@@ -54,18 +56,27 @@ body {
 
 .sidenav_bottom{
     padding-bottom:200px;
+    display:flex;
+    flex-direction:row;
+    color:var(--silver-color);
+    justify-content:space-evenly;
 }
 
 .btn-sidenav {
     background-color: transparent;
     font-size: large;
+    font-family:Chillax-Medium;
     color: var(--silver-color);
     padding-top:15px;
     padding-bottom:15px;
 }
 
 .btn-sidenav:hover{
-    color: var(--thunder-yellow);
+    color: var(--cyberpunk-blue3);
+}
+
+i:hover {
+    color: var(--cyberpunk-blue3);
 }
 
 hr {
@@ -76,4 +87,18 @@ hr {
     margin:0;
 }
 
+.outer-page {
+    margin:20px 150px 0px 150px;
+    padding:0 50px 0 50px;
+}
+
+.html-text {
+    color: #515152;
+    font-family: La Belle Aurore;
+    font-size:larger;
+}
+
+.default-section{
+    padding-top: 150px;
+}
 

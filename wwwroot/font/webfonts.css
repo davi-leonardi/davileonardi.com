@@ -1,3 +1,4 @@
+
 @font-face {
     font-family: 'Cyberpunk';
     src: url('Cyberpunk-Regular.ttf') format('truetype'), 
@@ -15,3 +16,63 @@
     font-style: normal;
     font-display: swap;
 }
+
+@font-face {
+    font-family: 'Chillax-Regular';
+    src:  
+        url('Chillax-Regular.woff') format('woff'), 
+        url('Chillax-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-display: swap;
+    font-style: normal;
+}
+
+
+@font-face {
+    font-family: 'Chillax-Medium';
+    src: url('Chillax-Medium.woff2') format('woff2'), 
+        url('Chillax-Medium.woff') format('woff'), 
+        url('Chillax-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-display: swap;
+    font-style: normal;
+}
+
+
+@font-face {
+    font-family: 'Chillax-Semibold';
+    src: url('Chillax-Semibold.woff2') format('woff2'), 
+        url('Chillax-Semibold.woff') format('woff'), 
+        url('Chillax-Semibold.ttf') format('truetype');
+    font-weight: 600;
+    font-display: swap;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Hunting Script';
+    src: url('HuntingScript.woff') format('woff'), 
+        url('HuntingScript.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Anthalucya';
+    src: url('Anthalucya.woff') format('woff'), 
+        url('Anthalucya.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'La Belle Aurore';
+    src: url('LaBelleAurore.woff') format('woff'), 
+        url('LaBelleAurore.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
