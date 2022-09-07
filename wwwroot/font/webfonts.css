@@ -1,0 +1,17 @@
+@font-face {
+    font-family: 'Cyberpunk';
+    src: url('Cyberpunk-Regular.ttf') format('truetype'), 
+        url('Cyberpunk-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'HelveticaBold';
+    src: url('Helvetica-Bold.woff2') format('woff2'), 
+        url('Helvetica-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}

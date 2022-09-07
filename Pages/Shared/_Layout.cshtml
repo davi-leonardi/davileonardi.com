@@ -1,0 +1,48 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Davi Leonardi</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/DaviWebsite.styles.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/images" />
+    <link rel="stylesheet" href="~/font/webfonts.css" />
+</head>
+<body>
+    <menu class="sidenav">
+        <div class="sidenav_top">
+            <img src="~/images/davi3.png" height="100" width="100" style="margin:10px 0 0px 25px"/>
+            <p style="font-family:HelveticaBold;font-size:x-large;align-self:center;color:white;margin:0">Davi</p>
+            <p style="align-self:center;color:var(--silver-color)">Web Developer</p>
+        </div>
+        <nav class="d-grid sidenav_middle">
+            <hr />
+            <button class="btn btn-sidenav">About</button>
+            <hr />
+            <button class="btn btn-sidenav">My Skills</button>
+            <hr />
+            <button class="btn btn-sidenav">Portfolio</button>
+            <hr />
+            <button class="btn btn-sidenav">Contact</button>
+            <hr />
+        </nav>
+        <div class="sidenav_bottom">
+            <a class="text-white">Social Media</a>
+        </div>         
+    </menu>
+
+    <div class="container">
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    </div>
+
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>
