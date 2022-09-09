@@ -7,5 +7,52 @@
 <p class="html-text">&lt;html&gt;</p>
 <p class="ps-5 html-text">&lt;body&gt;</p>
 <section class="px-5 default-section">
-    <p class="html-text">&lt;h1&gt;</p>
+    <p class="m-0 html-text">&lt;h1&gt;</p>
+    <div id="id1" class="animate__animated animate__bounceIn animate__delay-1s rubber-span">H</div>
+    <div class="animate__animated animate__bounceIn animate__delay-1s rubber-span">i</div> 
+    <div class="animate__animated animate__bounceIn animate__delay-1s rubber-span">,</div>
+    <br />
+    <div class="animate__animated animate__bounceIn animate__delay-2s rubber-span">I</div> 
+    <div class="animate__animated animate__bounceIn animate__delay-2s rubber-span">'</div> 
+    <div class="animate__animated animate__bounceIn animate__delay-2s rubber-span">m&nbsp</div>
+    <img class="animate__animated animate__rotateIn animate__delay-2s animate__slower" src="~/images/DLogoTransparent4.png" height="90" width="90" style="margin-top:5px;position:absolute;"/>
+    <div class="animate__animated animate__bounceIn animate__delay-2s rubber-span" style="margin-left:90px;">a</div> 
+    <div class="animate__animated animate__bounceIn animate__delay-2s rubber-span">v</div> 
+    <div class="animate__animated animate__bounceIn animate__delay-2s rubber-span">i</div> 
+    <div class="animate__animated animate__bounceIn animate__delay-2s rubber-span">,</div>
+    <br />
+    <div class="animate__animated animate__bounceIn animate__delay-3s rubber-span">W</div> 
+    <div class="animate__animated animate__bounceIn animate__delay-3s rubber-span">e</div> 
+    <div class="animate__animated animate__bounceIn animate__delay-3s rubber-span">b&nbsp</div> 
+    <div class="animate__animated animate__bounceIn animate__delay-3s rubber-span">D</div> 
+    <div class="animate__animated animate__bounceIn animate__delay-3s rubber-span">e</div> 
+    <div class="animate__animated animate__bounceIn animate__delay-3s rubber-span">v</div> 
+    <div class="animate__animated animate__bounceIn animate__delay-3s rubber-span">e</div> 
+    <div class="animate__animated animate__bounceIn animate__delay-3s rubber-span">l</div> 
+    <div class="animate__animated animate__bounceIn animate__delay-3s rubber-span">o</div> 
+    <div class="animate__animated animate__bounceIn animate__delay-3s rubber-span">p</div> 
+    <div class="animate__animated animate__bounceIn animate__delay-3s rubber-span">e</div> 
+    <div class="animate__animated animate__bounceIn animate__delay-3s rubber-span">r</div> 
+
+    <p class="html-text">&lt;/h1&gt;</p>
+    <p class="html-text">&lt;p&gt;</p>
+    <p class="animate__animated animate__bounceIn animate__delay-3s" style="font-family:Chillax-Regular">Full-stack Web Developer</p>
+    <p class="html-text">&lt;p&gt;</p>
 </section>
+
+<script src="~/lib/jquery/dist/jquery.min.js"></script>
+<script type="text/javascript">
+
+    $(document).ready(function(){
+        setTimeout(function(){
+            $(".rubber-span").removeClass("animate__delay-1s");
+        }, 2000);
+        setTimeout(function(){
+            $(".rubber-span").removeClass("animate__delay-2s");
+        }, 3000);
+        setTimeout(function(){
+            $(".rubber-span").removeClass("animate__delay-3s");
+        }, 4000);
+    });
+
+</script>

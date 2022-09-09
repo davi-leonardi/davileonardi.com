@@ -99,6 +99,58 @@ hr {
 }
 
 .default-section{
-    padding-top: 150px;
+    padding-top: 100px;
+}
+
+.rubber-span {
+    color: white;
+    font-family: Chillax-Semibold;
+    display:inline-block;
+    font-size: 500%;
+    transition: 0.2s ease-in-out color;
+}
+
+.rubber-span:hover{
+    display: inline-block;
+    color: var(--cyberpunk-blue3);
+    animation: rubberBand 1s;
+}
+
+.animate__animated.animate__bounceIn {
+    --animate-duration: 2s;
+}
+
+section p{
+    color:white;
+}
+
+@keyframes rubberBand{
+    from {
+        transform: scale3d(1, 1, 1);
+    }
+
+    30% {
+        transform: scale3d(1.25, 0.75, 1);
+    }
+
+    40% {
+        transform: scale3d(0.75, 1.25, 1);
+    }
+
+    50% {
+        transform: scale3d(1.15, 0.85, 1);
+    }
+
+    65% {
+        transform: scale3d(.95, 1.05, 1);
+    }
+
+    75% {
+        transform: scale3d(1.05, .95, 1);
+    }
+
+    to {
+        transform: scale3d(1, 1, 1);
+    }
 }
 
