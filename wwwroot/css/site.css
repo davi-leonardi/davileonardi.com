@@ -99,7 +99,7 @@ hr {
 }
 
 .default-section{
-    padding-top: 100px;
+    padding-top: 90px;
 }
 
 .rubber-span {
@@ -124,7 +124,61 @@ section p{
     color:white;
 }
 
-@keyframes rubberBand{
+.mouse_scroll {
+    display: block;
+    margin: 0 auto;
+    width: 24px;
+    height: auto;
+    margin-top: 40px;
+}
+
+.mouse {
+    height: 42px;
+    width: 24px;
+    border-radius: 14px;
+    transform: none;
+    border: 2px solid white;
+    top: 170px;
+}
+
+.wheel {
+    height: 5px;
+    width: 2px;
+    display: block;
+    margin: 5px auto;
+    background: white;
+    position: relative;
+    height: 4px;
+    width: 4px;
+    border: 2px solid #fff;
+    -webkit-border-radius: 8px;
+    border-radius: 8px;
+}
+
+.wheel {
+    -webkit-animation: mouse-wheel 1s linear infinite;
+    -moz-animation: mouse-wheel 1s linear infinite;
+    animation: mouse-wheel 1s linear infinite;
+}
+
+@-webkit-keyframes mouse-wheel {
+    0% {
+        opacity: 1;
+        -webkit-transform: translateY(0);
+        -ms-transform: translateY(0);
+        transform: translateY(0);
+    }
+
+    100% {
+        opacity: 0;
+        -webkit-transform: translateY(6px);
+        -ms-transform: translateY(6px);
+        transform: translateY(6px);
+    }
+}
+
+
+@keyframes rubberBand {
     from {
         transform: scale3d(1, 1, 1);
     }
@@ -153,4 +207,3 @@ section p{
         transform: scale3d(1, 1, 1);
     }
 }
-
