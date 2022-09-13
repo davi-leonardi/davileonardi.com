@@ -25,6 +25,7 @@ body {
     --silver-color: #C0C0C0;
     --cyberpunk-blue2: #08fdd8;
     --cyberpunk-blue3: #1FFCF6;
+    --bootstrap-yellow: #ffc107;
 }
 
 .sidenav {
@@ -100,6 +101,7 @@ hr {
 
 .default-section{
     padding-top: 90px;
+    margin-bottom:40px;
 }
 
 .rubber-span {
@@ -159,6 +161,28 @@ section p{
     -webkit-animation: mouse-wheel 1s linear infinite;
     -moz-animation: mouse-wheel 1s linear infinite;
     animation: mouse-wheel 1s linear infinite;
+}
+
+.about-section{
+    margin-top:250px;
+    margin-bottom:250px;
+}
+
+.about-h1 {
+    color: var(--bootstrap-yellow);
+    font-size: 400%;
+    display: inline-block;
+    font-family: Chillax-Semibold;
+}
+
+.about-h1:hover {
+    display: inline-block;
+    animation: rubberBand 1s;
+}
+
+#about-link{
+    color:var(--bootstrap-yellow);
+    font-family:Chillax-Medium;
 }
 
 @-webkit-keyframes mouse-wheel {
