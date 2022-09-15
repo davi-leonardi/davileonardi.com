@@ -163,9 +163,9 @@ section p{
     animation: mouse-wheel 1s linear infinite;
 }
 
-.about-section{
-    margin-top:250px;
-    margin-bottom:250px;
+.about-section {
+    height: auto;
+    margin-bottom: 40px;
 }
 
 .about-h1 {
@@ -180,9 +180,15 @@ section p{
     animation: rubberBand 1s;
 }
 
-#about-link{
+#about-link,
+#skills-link{
     color:var(--bootstrap-yellow);
     font-family:Chillax-Medium;
+}
+
+#mouse_scroll2 {
+    padding-top:110px;
+    margin-top: 0px;
 }
 
 @-webkit-keyframes mouse-wheel {
