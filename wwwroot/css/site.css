@@ -26,6 +26,14 @@ body {
     --cyberpunk-blue2: #08fdd8;
     --cyberpunk-blue3: #1FFCF6;
     --bootstrap-yellow: #ffc107;
+    --light-purple: #a179dc;
+    --cs-purple: #390091;
+    --light-red: #dc7979;
+    --light-blue: #79dcdc;
+    --light-blue2: #79abdc;
+    --light-blue3: #0089d6;
+    --light-yellow: #dccc79;
+    --light-yellow2: #E4EE89;
 }
 
 .sidenav {
@@ -42,6 +50,7 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    box-shadow: 0 2px 4px -1px rgb(0 0 0 / 20%), 0 4px 5px 0 rgb(0 0 0 / 14%), 0 1px 10px 0 rgb(0 0 0 / 12%);
 }
 
 .sidenav_top{
@@ -210,6 +219,61 @@ section p{
 #mouse_scroll3{
     margin-top:40px;
     margin-left: 750px;
+}
+
+.projects-div{
+    display:flex;
+    flex-direction:row;
+    justify-content:space-between;
+    flex-wrap:wrap;
+}
+
+.projects-article {
+    background-color: #1d1d1d;
+    box-shadow: 0 2px 4px -1px rgb(0 0 0 / 20%), 0 4px 5px 0 rgb(0 0 0 / 14%), 0 1px 10px 0 rgb(0 0 0 / 12%);
+    padding:20px;
+    margin:20px;
+    height:200px;
+    width:400px;
+}
+
+.article-content{
+    display:flex;
+    flex-direction:column;
+}
+
+.article-span {
+    position:relative;
+    margin-bottom: 20px;
+}
+
+.article-content h4{
+    color:white;
+}
+
+.csharp-color {
+    border-top: solid 0.3em var(--light-purple);
+    color: var(--light-purple);
+}
+
+.python-color {
+    border-top: solid 0.3em var(--light-blue2);
+    color: var(--light-blue2);
+}
+
+.js-color {
+    border-top: solid 0.3em var(--light-yellow2);
+    color: var(--light-yellow2);
+}
+
+.cpp-color {
+    border-top: solid 0.3em var(--light-red);
+    color: var(--light-red);
+}
+
+.projects-link {
+    color: var(--bootstrap-yellow);
+    font-family: Chillax-Medium;
 }
 
 @-webkit-keyframes mouse-wheel {

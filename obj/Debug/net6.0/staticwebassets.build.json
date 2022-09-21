@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "O0bLEHP5LzWrdGkmXlPyQ6mwgqer/OmTpu5iTKyJFqs=",
+  "Hash": "TMjvlHvmRXFpDsV9xZkNQqk/V4mzAdHcgb8mihHfZcI=",
   "Source": "DaviWebsite",
   "BasePath": "_content/DaviWebsite",
   "Mode": "Default",
@@ -493,12 +493,12 @@
       "OriginalItemSpec": "wwwroot\\images\\azure.png"
     },
     {
-      "Identity": "C:\\C#\\DaviWebsite\\wwwroot\\images\\c-sharp-pngrepo-com.png",
+      "Identity": "C:\\C#\\DaviWebsite\\wwwroot\\images\\bootstrap-4-logo-pngrepo-com.png",
       "SourceId": "DaviWebsite",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\C#\\DaviWebsite\\wwwroot\\",
       "BasePath": "_content/DaviWebsite",
-      "RelativePath": "images/c-sharp-pngrepo-com.png",
+      "RelativePath": "images/bootstrap-4-logo-pngrepo-com.png",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -507,7 +507,24 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\images\\c-sharp-pngrepo-com.png"
+      "OriginalItemSpec": "wwwroot\\images\\bootstrap-4-logo-pngrepo-com.png"
+    },
+    {
+      "Identity": "C:\\C#\\DaviWebsite\\wwwroot\\images\\c-sharp.png",
+      "SourceId": "DaviWebsite",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\C#\\DaviWebsite\\wwwroot\\",
+      "BasePath": "_content/DaviWebsite",
+      "RelativePath": "images/c-sharp.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\c-sharp.png"
     },
     {
       "Identity": "C:\\C#\\DaviWebsite\\wwwroot\\images\\css-3-pngrepo-com.png",
@@ -697,6 +714,23 @@
       "OriginalItemSpec": "wwwroot\\images\\dotnet-svgrepo-com.png"
     },
     {
+      "Identity": "C:\\C#\\DaviWebsite\\wwwroot\\images\\git-pngrepo-com.png",
+      "SourceId": "DaviWebsite",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\C#\\DaviWebsite\\wwwroot\\",
+      "BasePath": "_content/DaviWebsite",
+      "RelativePath": "images/git-pngrepo-com.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\git-pngrepo-com.png"
+    },
+    {
       "Identity": "C:\\C#\\DaviWebsite\\wwwroot\\images\\html-5-pngrepo-com.png",
       "SourceId": "DaviWebsite",
       "SourceType": "Discovered",
@@ -746,6 +780,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\images\\kisspng-javascript-responsive-web-design-programmer-5b16edb5181f08.6215468715282293010988.png"
+    },
+    {
+      "Identity": "C:\\C#\\DaviWebsite\\wwwroot\\images\\microsoft-sql-server-logo-pngrepo-com.png",
+      "SourceId": "DaviWebsite",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\C#\\DaviWebsite\\wwwroot\\",
+      "BasePath": "_content/DaviWebsite",
+      "RelativePath": "images/microsoft-sql-server-logo-pngrepo-com.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\microsoft-sql-server-logo-pngrepo-com.png"
     },
     {
       "Identity": "C:\\C#\\DaviWebsite\\wwwroot\\js\\site.js",
