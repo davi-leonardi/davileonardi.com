@@ -267,29 +267,38 @@
     <p class="m-0 html-text">&lt/p&gt</p>
     <br />
     <p class="ms-4 html-text">&ltform&gt</p>
-    <form class="ps-4 contact-form" autocomplete="off">
-        <div class="contact-input-outer">
-            <div class="row">
-                <input class="col me-2 contact-input" type="text" placeholder="Name"/>
-                <input class="col ms-2 contact-input" type="email" placeholder="Email"/>
+    <form id="form-email" class="ps-4 contact-form" autocomplete="off">
+        <div class="row">
+            <div class="form-group col-md-6">
+                <input class="form-control contact-input" name="fname" type="text" placeholder="Name"/>
+                <label id="fname-error" class="col-form-label" for="fname"></label>
             </div>
-            <div class="row">
-                <input class="col contact-input" placeholder="Subject" type="text"/>
+            <div class="form-group col-md-6">
+                <input class="form-control contact-input" name="femail" type="email" placeholder="Your e-mail"/>
+                <label class="col-form-label" for="femail"></label>
             </div>
-            <div class="row">
-                <textarea class="col contact-input" placeholder="Message" maxlength="500" style="height:150px;"></textarea>
+        </div>
+        <div class="row">
+            <div class="form-group col-md-12">
+                <input class="form-control contact-input" name="fsubject" placeholder="Subject" type="text"/>
+                <label class="col-form-label" for="fsubject"></label>
             </div>
-            <div>
-                <button class="btn btn-lg btn-outline-warning contact-input-button" type="submit" style="float:right;">
-                    Send e-mail
-                </button>
+            <div class="form-group col-md-12">
+                <textarea class="form-control contact-input" name="fmessage" placeholder="Message" maxlength="500" style="height:150px;"></textarea>
+                <label class="col-form-label" for="fmessage"></label>
             </div>
+        </div>
+        <div>
+            <span style="color:var(--bootstrap-yellow);">Recipient: dleonardimathey@gmail.com</span>
+            <button class="btn btn-lg btn-outline-warning contact-input-button" type="submit" style="float:right;">
+                Send e-mail
+            </button>
         </div>
     </form>
     <p class="ms-4 html-text">&lt/form&gt</p>
     <p class="html-text">&lt/section&gt</p>
 </section>
-<p class="ps-5 html-text">&lt;/body&gt;</p>
+<p class="ps-5 html-text" data-viewport="">&lt;/body&gt;</p>
 <p class="m-0 html-text">&lt;/html&gt;</p>
 
 <script src="~/lib/jquery/dist/jquery.min.js"></script>
@@ -305,6 +314,20 @@
         setTimeout(function(){
             $(".rubber-span").removeClass("animate__delay-3s");
         }, 4000);
+    });
+
+    $(function(){
+        $("#form-email").validate({
+            errorClass:"invalid-input",
+            rules:{
+                fname:"required",
+                femail:"required",
+                fsubject:"required",
+                fmessage:"required"
+            },
+            submitHandler: function() { alert("Success, your e-mail has been submited!") }
+        });
+
     });
 
 </script>

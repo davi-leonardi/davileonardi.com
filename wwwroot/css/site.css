@@ -302,6 +302,18 @@ section p{
     margin-left:12px;
 }
 
+.form-control:focus {
+    background-color: #2b2b2b;
+    box-shadow: 0 3px 0 0 var(--bootstrap-yellow);
+    outline: none;
+    color: #8d8d8d;
+}
+
+.invalid-input {
+    box-shadow: 0 3px 0 0 rgb(255 0 0) !important;
+    color: red;
+}
+
 .contact-input {
     height: 50px;
     background-color: #2b2b2b;
@@ -313,8 +325,15 @@ textarea {
     resize: none;
 }
 
-textarea:focus, input:focus {
+/*textarea:focus, input:focus {
+    box-shadow: 0 3px 0 0 var(--bootstrap-yellow);
     outline: none;
+}
+*/
+
+.col-form-label {
+    color: red;
+    box-shadow: none;
 }
 
 @-webkit-keyframes mouse-wheel {
