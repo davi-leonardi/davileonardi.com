@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "TMjvlHvmRXFpDsV9xZkNQqk/V4mzAdHcgb8mihHfZcI=",
+  "Hash": "CjMpVt7LBst9yMsZM2C0/FgbhFfNAcpSy+GkQB7pK2o=",
   "Source": "DaviWebsite",
   "BasePath": "_content/DaviWebsite",
   "Mode": "Default",
@@ -695,6 +695,40 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\images\\DLogoTransparent4.png"
+    },
+    {
+      "Identity": "C:\\C#\\DaviWebsite\\wwwroot\\images\\document-pngrepo-com.png",
+      "SourceId": "DaviWebsite",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\C#\\DaviWebsite\\wwwroot\\",
+      "BasePath": "_content/DaviWebsite",
+      "RelativePath": "images/document-pngrepo-com.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\document-pngrepo-com.png"
+    },
+    {
+      "Identity": "C:\\C#\\DaviWebsite\\wwwroot\\images\\document-svgrepo-com.svg",
+      "SourceId": "DaviWebsite",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\C#\\DaviWebsite\\wwwroot\\",
+      "BasePath": "_content/DaviWebsite",
+      "RelativePath": "images/document-svgrepo-com.svg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\document-svgrepo-com.svg"
     },
     {
       "Identity": "C:\\C#\\DaviWebsite\\wwwroot\\images\\dotnet-svgrepo-com.png",

@@ -45,6 +45,7 @@ body {
     left: 0;
     background-color: #181818;
     overflow-x: hidden;
+    overflow:hidden;
     margin: 0px;
     padding: 0px;
     display: flex;
@@ -204,10 +205,16 @@ section p{
     height:240px;
 }
 
-#about-link,
 #skills-link {
     color: var(--bootstrap-yellow);
     font-family: Chillax-Medium;
+}
+
+#about-link {
+    color: var(--bootstrap-yellow);
+    font-family: Chillax-Medium;
+    cursor: pointer;
+    text-decoration: underline;
 }
 
 #mouse_scroll2 {
@@ -224,7 +231,7 @@ section p{
 .projects-div{
     display:flex;
     flex-direction:row;
-    justify-content:space-between;
+    justify-content:space-evenly;
     flex-wrap:wrap;
 }
 
@@ -291,7 +298,7 @@ section p{
 
 .contact-form{
     width:800px;
-    height:360px;
+    max-height:450px;
 }
 
 .contact-input-outer {
@@ -309,10 +316,10 @@ section p{
     color: #8d8d8d;
 }
 
-.invalid-input {
+/*.invalid-input {
     box-shadow: 0 3px 0 0 rgb(255 0 0) !important;
     color: red;
-}
+}*/
 
 .contact-input {
     height: 50px;
@@ -334,6 +341,36 @@ textarea {
 .col-form-label {
     color: red;
     box-shadow: none;
+}
+
+input {
+    margin-bottom: 5px;
+}
+
+input.invalid-input, textarea.invalid-input {
+    box-shadow: 0 3px 0 0 rgb(255 0 0) !important;
+    color: red;
+}
+
+label.invalid-input{
+    margin: 5px 0px 5px 0px;
+}
+
+label{
+    color:red;
+}
+
+.btn-sidenav:focus{
+    outline:none;
+    box-shadow:none;
+}
+
+.link-sidenav{
+    color:transparent;
+}
+
+#middle-input{
+    margin:5px 0px 10px 0px;
 }
 
 @-webkit-keyframes mouse-wheel {

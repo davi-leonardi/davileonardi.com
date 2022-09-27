@@ -36,10 +36,10 @@
 
     <p class="html-text">&lt;/h1&gt;</p>
     <p class="html-text">&lt;p&gt;</p>
-    <p class="animate__animated animate__fadeInRight animate__delay-3s" style="font-family:Chillax-Regular; width:200px;">Full-stack Web Developer</p>
+    <p class="animate__animated animate__fadeInRight animate__delay-3s" style="font-family:Chillax-Regular; width:500px;">Full-stack Web Developer / .NET enthusiast</p>
     <p class="html-text">&lt;/p&gt;</p>
 
-    <button class="mt-4 col-2 mx-auto btn btn-lg btn-outline-warning animate__animated animate__fadeInUp animate__delay-3s">
+    <button id="contact-me-btn" class="mt-4 col-2 mx-auto btn btn-lg btn-outline-warning animate__animated animate__fadeInUp animate__delay-3s">
         Contact me!
     </button>
 
@@ -49,7 +49,7 @@
         </div>
     </div>
 </section>
-<section class="px-5 about-section">
+<section id="scroll2" class="px-5 about-section">
     <p class="m-0 html-text" style="padding-top:40px;padding-bottom:180px;">&ltsection&gt</p>
     <p class="m-0 html-text">&lth2&gt</p>
     <div class="animate__animated animate__bounceIn about-h1">A</div>
@@ -67,7 +67,7 @@
     <p class="col-6">It was during high school that I decided to pursue a career as a developer. In Fall 2020 I joined Seneca College (Toronto, CA) to study software development.</p>
     <p class="col-6">Dedicated, honest and respectful worker with a friendly temperament. Fan of games, Brazilian literature and student of classical philosophy (especially Stoicism and Hermeticism).</p>
     <p class="col-6">My area of greatest interest is the backend with ASP.NET framework</p>
-    <a id="about-link" href="#">Let's work together!</a>
+    <span id="about-link">Let's work together!</span>
     <p class="m-0 html-text">&lt/p&gt</p>
     <p class="m-0 html-text">&lt/section&gt</p>
     <div id="mouse_scroll2" class="mouse_scroll">
@@ -165,7 +165,7 @@
             <div class="article-content">
                 <span class="article-span">C#, ASP.NET MVC & Azure</span>
                 <h4>Inventory Management System</h4>
-                <p>Just a simple inventory management system.</p>
+                <p>SQLServer, EF Core, Identity, deployed on Azure.</p>
                 <div>
                     <a class="article-github" href="https://github.com/davi-leonardi/InventoryManagementSystem" target="_blank">
                         <i title="Github" style="color:inherit;">  
@@ -181,7 +181,7 @@
             <div class="article-content">
                 <span class="article-span">Python, Flask & Socket.io</span>
                 <h4>Bug Tracker</h4>
-                <p>Just a simple bug tracker</p>
+                <p>A real-time bug tracker with authentication.</p>
                 <div>
                     <a class="article-github" href="https://github.com/davi-leonardi/bugTracker" target="_blank">
                         <i title="Github" style="color:inherit;">  
@@ -197,7 +197,7 @@
             <div class="article-content">
                 <span class="article-span">Javascript & Node.js</span>
                 <h4>Web Wildlife Walk</h4>
-                <p>INaturalist stuff</p>
+                <p>Organizes species from INaturalist platform.</p>
                 <div>
                     <a class="article-github" href="https://github.com/davi-leonardi/Web-Wildlife-Walk" target="_blank">
                         <i title="Github" style="color:inherit;">  
@@ -212,7 +212,7 @@
         <article class="cpp-color projects-article">
             <div class="article-content">
                 <span class="article-span">C++</span>
-                <h4>Console app</h4>
+                <h4>Console apps</h4>
                 <p>Some console app</p>
                 <div>
                     <a class="article-github" href="https://github.com/davi-leonardi/davileonardi.com" target="_blank">
@@ -271,28 +271,32 @@
         <div class="row">
             <div class="form-group col-md-6">
                 <input class="form-control contact-input" name="fname" type="text" placeholder="Name"/>
-                <label id="fname-error" class="col-form-label" for="fname"></label>
+                @*<label class="col-form-label" for="fname"></label>*@
             </div>
             <div class="form-group col-md-6">
                 <input class="form-control contact-input" name="femail" type="email" placeholder="Your e-mail"/>
-                <label class="col-form-label" for="femail"></label>
+                @*<label class="col-form-label" for="femail"></label>*@
             </div>
         </div>
         <div class="row">
             <div class="form-group col-md-12">
-                <input class="form-control contact-input" name="fsubject" placeholder="Subject" type="text"/>
-                <label class="col-form-label" for="fsubject"></label>
+                <input id="middle-input" class="form-control contact-input" name="fsubject" placeholder="Subject" type="text"/>
+                @*<label class="col-form-label" for="fsubject"></label>*@
             </div>
             <div class="form-group col-md-12">
                 <textarea class="form-control contact-input" name="fmessage" placeholder="Message" maxlength="500" style="height:150px;"></textarea>
-                <label class="col-form-label" for="fmessage"></label>
+                @*<label class="col-form-label" for="fmessage"></label>*@
             </div>
         </div>
-        <div>
-            <span style="color:var(--bootstrap-yellow);">Recipient: dleonardimathey@gmail.com</span>
-            <button class="btn btn-lg btn-outline-warning contact-input-button" type="submit" style="float:right;">
-                Send e-mail
-            </button>
+        <div class="row" style="margin-top:10px;">
+            <div class="form-group col-md-6">
+                <span style="color:var(--bootstrap-yellow);">Recipient: dleonardimathey@gmail.com</span>
+            </div>
+            <div class="form-group col-md-6">
+                <button class="btn btn-lg btn-outline-warning contact-input-button" type="submit" style="float:right;">
+                    Send e-mail
+                </button>
+            </div>
         </div>
     </form>
     <p class="ms-4 html-text">&lt/form&gt</p>
@@ -329,5 +333,31 @@
         });
 
     });
+
+    $("#btn-home").click(function(){
+        window.scrollTo(0, 0);
+    });
+
+    $("#btn-about").click(function(){
+        window.scrollTo(0, 980);
+    });
+
+    $("#btn-skills").click(function(){
+        window.scrollTo(0, 1950);
+    });
+
+    $("#btn-portfolio").click(function(){
+        window.scrollTo(0, 2930);
+    });
+
+    $("#btn-contact").click(function(){
+        window.scrollTo(0, 4000);
+    });
+
+    $("#contact-me-btn,#about-link").click(function(){
+        window.scrollTo(0, 4000);
+    });
+
+
 
 </script>
