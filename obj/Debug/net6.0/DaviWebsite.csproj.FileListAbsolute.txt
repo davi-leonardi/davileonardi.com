@@ -24,3 +24,7 @@ C:\C#\DaviWebsite\obj\Debug\net6.0\refint\DaviWebsite.dll
 C:\C#\DaviWebsite\obj\Debug\net6.0\DaviWebsite.pdb
 C:\C#\DaviWebsite\obj\Debug\net6.0\DaviWebsite.genruntimeconfig.cache
 C:\C#\DaviWebsite\obj\Debug\net6.0\ref\DaviWebsite.dll
+C:\C#\DaviWebsite\bin\Debug\net6.0\MailKit.dll
+C:\C#\DaviWebsite\bin\Debug\net6.0\MimeKit.dll
+C:\C#\DaviWebsite\bin\Debug\net6.0\BouncyCastle.Crypto.dll
+C:\C#\DaviWebsite\obj\Debug\net6.0\DaviWebsite.csproj.CopyComplete

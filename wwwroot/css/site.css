@@ -316,11 +316,6 @@ section p{
     color: #8d8d8d;
 }
 
-/*.invalid-input {
-    box-shadow: 0 3px 0 0 rgb(255 0 0) !important;
-    color: red;
-}*/
-
 .contact-input {
     height: 50px;
     background-color: #2b2b2b;
@@ -331,12 +326,6 @@ section p{
 textarea {
     resize: none;
 }
-
-/*textarea:focus, input:focus {
-    box-shadow: 0 3px 0 0 var(--bootstrap-yellow);
-    outline: none;
-}
-*/
 
 .col-form-label {
     color: red;

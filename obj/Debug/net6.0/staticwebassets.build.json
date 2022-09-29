@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "CjMpVt7LBst9yMsZM2C0/FgbhFfNAcpSy+GkQB7pK2o=",
+  "Hash": "mACMzN3UOAI0D0tcWbdNZ7HsRRMJ0CfRWgRa0udYTSs=",
   "Source": "DaviWebsite",
   "BasePath": "_content/DaviWebsite",
   "Mode": "Default",
@@ -831,6 +831,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\images\\microsoft-sql-server-logo-pngrepo-com.png"
+    },
+    {
+      "Identity": "C:\\C#\\DaviWebsite\\wwwroot\\images\\postgresql-logo-pngrepo-com.png",
+      "SourceId": "DaviWebsite",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\C#\\DaviWebsite\\wwwroot\\",
+      "BasePath": "_content/DaviWebsite",
+      "RelativePath": "images/postgresql-logo-pngrepo-com.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\postgresql-logo-pngrepo-com.png"
     },
     {
       "Identity": "C:\\C#\\DaviWebsite\\wwwroot\\js\\site.js",
