@@ -28,3 +28,6 @@ C:\C#\DaviWebsite\bin\Debug\net6.0\MailKit.dll
 C:\C#\DaviWebsite\bin\Debug\net6.0\MimeKit.dll
 C:\C#\DaviWebsite\bin\Debug\net6.0\BouncyCastle.Crypto.dll
 C:\C#\DaviWebsite\obj\Debug\net6.0\DaviWebsite.csproj.CopyComplete
+C:\C#\DaviWebsite\bin\Debug\net6.0\Newtonsoft.Json.dll
+C:\C#\DaviWebsite\bin\Debug\net6.0\SendGrid.dll
+C:\C#\DaviWebsite\bin\Debug\net6.0\StarkbankEcdsa.dll

@@ -14,7 +14,6 @@ html {
 }
 
 body {
-    margin-bottom: 60px;
     background-color: #1d1d1d;
 }
 
@@ -360,6 +359,22 @@ label{
 
 #middle-input{
     margin:5px 0px 10px 0px;
+}
+
+.copyright-footer{
+    display:block;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#copyright-text {
+    margin: 0px;
+    text-align:center;
+    color:white;
+}
+
+#server-alert {
+    position:fixed;
 }
 
 @-webkit-keyframes mouse-wheel {

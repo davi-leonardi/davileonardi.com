@@ -15,18 +15,18 @@ $(document).ready(function () {
     }, 4000);
 });
 
-$(function () {
-    $("#form-email").validate({
-        errorClass: "invalid-input",
-        rules: {
-            fname: "required",
-            femail: "required",
-            fsubject: "required",
-            fmessage: "required"
-        },
-        submitHandler: function () { alert("Success, your e-mail has been submited!") }
-    });
-
+$("#form-email").validate({
+    errorClass: "invalid-input",
+    rules: {
+        Name: "required",
+        Email: "required",
+        Subject: "required",
+        Body: "required"
+    },
+    submitHandler: function () {
+        alert("Success, your e-mail has been submited!");
+        form.submit();
+    }
 });
 
 $("#btn-home").click(function () {
@@ -46,9 +46,9 @@ $("#btn-portfolio").click(function () {
 });
 
 $("#btn-contact").click(function () {
-    window.scrollTo(0, 4000);
+    window.scrollTo(0, 3940);
 });
 
 $("#contact-me-btn,#about-link").click(function () {
-    window.scrollTo(0, 4000);
+    window.scrollTo(0, 3940);
 });

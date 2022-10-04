@@ -43,6 +43,10 @@
             "MailKit": {
               "target": "Package",
               "version": "[3.4.1, )"
+            },
+            "SendGrid": {
+              "target": "Package",
+              "version": "[9.28.1, )"
             }
           },
           "imports": [

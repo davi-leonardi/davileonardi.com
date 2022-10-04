@@ -4,6 +4,15 @@
     ViewData["Title"] = "Home page";
 }
 
+@if(ViewData["server-error"] == "True"){
+    <div class="alert alert-danger alert-dismissible fade show" role="alert" id="server-alert">
+      <div>
+        Server error! Email not submitted.                     
+      </div>
+      <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+    </div>
+}
+
 <p class="html-text">&lt;html&gt;</p>
 <p class="ps-5 html-text">&lt;body&gt;</p>
 <section class="px-5 default-section">
@@ -267,21 +276,21 @@
     <p class="m-0 html-text">&lt/p&gt</p>
     <br />
     <p class="ms-4 html-text">&ltform&gt</p>
-    <form id="form-email" class="ps-4 contact-form" autocomplete="off" method="post">
+    <form id="form-email" class="ps-4 contact-form" method="post">
         <div class="row">
             <div class="form-group col-md-6">
-                <input class="form-control contact-input" name="fname" type="text" asp-for="EmailModel.Name" placeholder="Name"/>
+                <input class="form-control contact-input" name="Name" type="text" asp-for="EmailDTOModel.Name" placeholder="Name"/>
             </div>
             <div class="form-group col-md-6">
-                <input class="form-control contact-input" name="femail" type="email" asp-for="EmailModel.Email" placeholder="Your e-mail"/>
+                <input class="form-control contact-input" name="Email" type="email" asp-for="EmailDTOModel.Email" placeholder="Your e-mail"/>
             </div>
         </div>
         <div class="row">
             <div class="form-group col-md-12">
-                <input id="middle-input" class="form-control contact-input" name="fsubject" asp-for="EmailModel.Subject" placeholder="Subject" type="text"/>
+                <input id="middle-input" class="form-control contact-input" name="Subject" asp-for="EmailDTOModel.Subject" placeholder="Subject" type="text"/>
             </div>
             <div class="form-group col-md-12">
-                <textarea class="form-control contact-input" name="fmessage" asp-for="EmailModel.Body" placeholder="Message" maxlength="500" style="height:150px;"></textarea>
+                <textarea class="form-control contact-input" name="Body" asp-for="EmailDTOModel.Body" placeholder="Message" maxlength="500" style="height:150px;"></textarea>
             </div>
         </div>
         <div class="row" style="margin-top:10px;">
@@ -298,8 +307,11 @@
     <p class="ms-4 html-text">&lt/form&gt</p>
     <p class="html-text">&lt/section&gt</p>
 </section>
-<p class="ps-5 html-text" data-viewport="">&lt;/body&gt;</p>
+<p class="ps-5 html-text" >&lt;/body&gt;</p>
 <p class="m-0 html-text">&lt;/html&gt;</p>
+<div class="copyright-footer">
+    <p id="copyright-text">&copy 2022 - Davi Leonardi, All Rights Reserved.</p>
+</div>
 
 <script src="~/lib/jquery/dist/jquery.min.js"></script>
 <script src="~/js/site.js"></script>
