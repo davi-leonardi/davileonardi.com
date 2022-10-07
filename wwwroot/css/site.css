@@ -1,19 +1,48 @@
 html {
-  font-size: 14px;
+  font-size: 16px;
 }
 
-@media (min-width: 768px) {
+.sub-text{
+    font-size: 1.5rem;
+}
+
+.normal-text {
+    font-size: 1.2rem;
+    white-space:normal;
+}
+
+@media all and (max-height: 780px) {
+    html {
+        font-size: 13px;
+    }
+}
+
+/*@media (min-height: 500px) {
+  html {
+    font-size: 12px;
+  }
+}
+*/
+/*@media (min-width: 1000px) {
   html {
     font-size: 16px;
   }
-}
+}*/
 
+/*@media (max-width: 800px) {
+    html {
+        font-size: 10px;
+    }
+}
+*/
 html {
   position: relative;
   min-height: 100%;
 }
 
 body {
+/*    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;*/
     background-color: #1d1d1d;
 }
 
@@ -93,31 +122,65 @@ hr {
     margin:0;
 }
 
+.main-page{
+    display:flex;
+    flex-direction:column;
+}
+
 .outer-page {
-    margin:20px 50px 0px 150px;
+    margin:0px 50px 0px 150px;
     padding:0 50px 0 50px;
+}
+
+.html-abs{
+    position:relative;
 }
 
 .html-text {
     color: #515152;
     font-family: La Belle Aurore;
-    font-size:larger;
+    font-size:1.3rem;
 }
 
-.default-section{
-    padding-top: 90px;
-    margin-bottom:40px;
+.outer-section1 {
+    display:flex;
+    flex-direction:column;
+    position:relative;
+    height: 100vh;
+}
+
+.default-section {
+    position: absolute;
+    bottom:10vw;
+    white-space: nowrap;
+    align-items:center;
 }
 
 .rubber-span {
     color: white;
     font-family: Chillax-Semibold;
-    display:inline-block;
-    font-size: 500%;
+    display: inline-block;
+    overflow-inline:unset;
+    font-size: 5rem;
+    line-height: 6rem;
     transition: 0.2s ease-in-out color;
 }
 
-.rubber-span:hover{
+#img-D {
+    margin-top: -60px;
+    margin-right: 0px;
+    position: relative;
+    height: 6rem;
+    width: 6rem;
+    /*height ="90" width="90"*/
+}
+
+#contact-me-btn{
+    min-width: 150px;
+    max-width: 230px;
+}
+
+.rubber-span:hover {
     display: inline-block;
     color: var(--cyberpunk-blue3);
     animation: rubberBand 1s;
@@ -134,9 +197,10 @@ section p{
 .mouse_scroll {
     display: block;
     margin: 0 auto;
+    /*position:relative;*/
     width: 24px;
     height: auto;
-    margin-top: 40px;
+    /*margin-top: 40px;*/
 }
 
 .mouse {
@@ -169,14 +233,19 @@ section p{
 }
 
 .about-section {
+    position: absolute;
+    white-space: nowrap;
     height: auto;
     margin-bottom: 40px;
+    /*top: 20vh;*/
+    bottom: 15vh;
 }
 
 .about-h1 {
     color: var(--bootstrap-yellow);
-    font-size: 400%;
+    font-size: 5rem;
     display: inline-block;
+    line-height: 5rem;
     font-family: Chillax-Semibold;
 }
 
@@ -214,12 +283,24 @@ section p{
     font-family: Chillax-Medium;
     cursor: pointer;
     text-decoration: underline;
+    font-size: 1.2rem;
+}
+
+#section-closer{
+    position:absolute;
+    bottom: 18vh;
+}
+
+#mouse_scroll1 {
+    position: absolute;
+    left: 39vw;
+    bottom: 2vh;
 }
 
 #mouse_scroll2 {
-    padding-top:110px;
-    margin-top: 0px;
-    margin-left:700px;
+    position: absolute;
+    left: 39vw;
+    bottom: 2vh;
 }
 
 #mouse_scroll3{
