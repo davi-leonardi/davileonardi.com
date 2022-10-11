@@ -1,14 +1,5 @@
 
 @font-face {
-    font-family: 'Cyberpunk';
-    src: url('Cyberpunk-Regular.ttf') format('truetype'), 
-        url('Cyberpunk-Regular.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
     font-family: 'HelveticaBold';
     src: url('Helvetica-Bold.woff2') format('woff2'), 
         url('Helvetica-Bold.woff') format('woff');
@@ -47,24 +38,6 @@
     font-weight: 600;
     font-display: swap;
     font-style: normal;
-}
-
-@font-face {
-    font-family: 'Hunting Script';
-    src: url('HuntingScript.woff') format('woff'), 
-        url('HuntingScript.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'Anthalucya';
-    src: url('Anthalucya.woff') format('woff'), 
-        url('Anthalucya.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-    font-display: swap;
 }
 
 @font-face {

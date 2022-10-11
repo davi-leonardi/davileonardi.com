@@ -10,11 +10,29 @@ html {
 .normal-text {
     font-size: 1.2rem;
     white-space:normal;
+    min-width: 465px;
 }
 
-/*675px*/
+@media all and (max-height: 515px) {
+    div.about-h1{
+        font-size: 8px;
+    }
+}
 
-@media all and (max-height: 700px) { /*760*/
+@media all and (max-height: 610px) {  
+    img.img-skills {
+        width: 8rem;
+        height: 8rem;
+    }
+}
+
+@media all and (max-height: 660px) {  
+    div.mouse_scroll{
+        display:none;
+    }
+}
+
+@media all and (max-height: 700px) {  
     .html-abs,
     #section-closer,
     #section-closer2,
@@ -23,27 +41,59 @@ html {
     }
 }
 
-@media all and (max-height: 740px) { /*760*/
-    .projects-article {
+@media all and (max-height: 720px) {  
+    div.outer-page {
+        padding: 0px;
+    }
+}
+
+@media all and (max-height: 740px) {  
+    div.projects-article {
         font-size: 13px;
     }
 }
 
-@media all and (max-height: 810px) { /*760*/
+@media all and (max-height: 810px) {  
     html {
         font-size: 13px;
     }
 }
 
-@media all and (max-width: 1090px) {
-    projects-div{
-        justify-content:normal;
+@media all and (max-width: 745px) {
+    menu.sidenav{
+        display:none;
+    }
+    div.outer-page{
+        margin: 0px;
+    }
+}
+
+@media all and (max-width: 1160px) {
+    img.img-skills {
+        width: 8rem;
+        height: 8rem;
     }
 }
 
 @media all and (max-width: 1414px) {
     html {
         font-size: 10px;
+    }
+
+    div.projects-div {
+        max-width: none;
+        flex-wrap: nowrap;
+    }
+
+    section.projects-section{
+        bottom: 20vh;
+    }
+
+    .html-abs,
+    #section-closer,
+    #section-closer2,
+    #section-closer3 {
+        display: none;
     }
 }
 
@@ -53,20 +103,13 @@ html {
     }
 }
 
-@media all and (max-width: 1612px) {
-    .projects-article{
+@media all and (max-width: 1613px) {
+    div.projects-div{
         font-size: 13px;
     }
 }
 
-html {
-  position: relative;
-  min-height: 100%;
-}
-
 body {
-/*    -ms-text-size-adjust: 100%;
-    -webkit-text-size-adjust: 100%;*/
     background-color: #1d1d1d;
 }
 
@@ -114,6 +157,7 @@ body {
 }
 
 .sidenav_bottom{
+    padding-top: 10px;
     padding-bottom:200px;
     display:flex;
     flex-direction:row;
@@ -175,7 +219,7 @@ hr {
 
 .default-section {
     position: absolute;
-    bottom:10vw;
+    bottom:15vh;
     white-space: nowrap;
     align-items:center;
 }
@@ -196,7 +240,6 @@ hr {
     position: relative;
     height: 6rem;
     width: 6rem;
-    /*height ="90" width="90"*/
 }
 
 #contact-me-btn{
@@ -221,17 +264,10 @@ section p{
 .mouse_scroll {
     display: block;
     margin: 0 auto;
-    /*position:relative;*/
-    /*width: 24px;*/
-    /*width: 2rem;*/
-    /*height: auto;*/
-    /*margin-top: 40px;*/
 }
 
 .mouse {
-    /*height: 42px;*/
     height: 2.9rem;
-    /*width: 24px;*/
     width: 1.8rem;
     border-radius: 14px;
     transform: none;
@@ -264,7 +300,6 @@ section p{
     white-space: nowrap;
     height: auto;
     margin-bottom: 40px;
-    /*top: 20vh;*/
     bottom: 15vh;
 }
 
@@ -302,16 +337,12 @@ section p{
 
 .outer-skills-cards {
     position: relative;
-/*    display: flex;
-    justify-content: space-between;
-    background-color: transparent;*/
 }
 
 .inner-skills-cards{
     padding: 20px;
     margin: 20px;
     background-color:white;
-    /*height:240px;*/
 }
 
 .inner-right-skills-cards {
@@ -323,8 +354,6 @@ section p{
 }
 
 .img-skills {
-    /*    height: 20vh;
-    width: 10vw;*/
     height: 10rem;
     width: 10rem;
 }
@@ -357,6 +386,11 @@ section p{
     bottom: 3vh;
 }
 
+#section-closer4 {
+    position: absolute;
+    bottom: 3vh;
+}
+
 #mouse_scroll1 {
     position: absolute;
     left: 39vw;
@@ -383,12 +417,21 @@ section p{
     bottom: 3vh;
 }
 
+.contact-section {
+    position: absolute;
+    white-space: nowrap;
+    margin-bottom: 40px;
+    height: auto;
+    bottom: 10vh;
+}
+
 .projects-div{
     display:flex;
     flex-direction:row;
     justify-content:space-evenly;
     flex-wrap:wrap;
     font-size: 16px;
+    max-width: 1510px;
 }
 
 .projects-article {
@@ -396,8 +439,6 @@ section p{
     box-shadow: 0 2px 4px -1px rgb(0 0 0 / 20%), 0 4px 5px 0 rgb(0 0 0 / 14%), 0 1px 10px 0 rgb(0 0 0 / 12%);
     padding:20px;
     margin:20px;
-    /*height:200px;*/
-    /*width:400px;*/
     height: auto;
 }
 
@@ -454,7 +495,6 @@ section p{
 }
 
 .contact-form{
-    width:800px;
     max-height:450px;
 }
 
@@ -474,7 +514,7 @@ section p{
 }
 
 .contact-input {
-    height: 50px;
+    height: 3.5rem;
     background-color: #2b2b2b;
     border: none;
     color: #8d8d8d;
