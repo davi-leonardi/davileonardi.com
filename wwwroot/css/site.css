@@ -85,15 +85,8 @@ html {
         flex-wrap: nowrap;
     }
 
-    section.projects-section{
+    section.projects-section {
         bottom: 20vh;
-    }
-
-    .html-abs,
-    #section-closer,
-    #section-closer2,
-    #section-closer3 {
-        display: none;
     }
 }
 

@@ -8,19 +8,22 @@ using MimeKit.Text;
 using SendGrid.Helpers.Mail;
 using SendGrid;
 using Microsoft.AspNetCore.Mvc.ApplicationModels;
+using Microsoft.AspNetCore.Mvc.Routing;
 
 namespace DaviWebsite.Pages
 {
     public class IndexModel : PageModel
     {
         private readonly ILogger<IndexModel> _logger;
+        private readonly IConfiguration _configuration;
 
         [BindProperty]
         public EmailDTOModel EmailDTOModel { get; set; }
 
-        public IndexModel(ILogger<IndexModel> logger)
+        public IndexModel(ILogger<IndexModel> logger, IConfiguration configuration)
         {
             _logger = logger;
+            _configuration = configuration;
             EmailDTOModel = new EmailDTOModel();
         }
 
@@ -34,11 +37,12 @@ namespace DaviWebsite.Pages
             try
             {
                 ViewData["server-error"] = "False";
-                var apiKey = "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";
+                var businessGmail = _configuration["businessGmail"];
+                var apiKey = _configuration["SendGridApiKey"];
                 var client = new SendGridClient(apiKey);
-                var from = new EmailAddress("dleonardimathey@gmail.com", EmailDTOModel.Name);
+                var from = new EmailAddress("businessGmail", EmailDTOModel.Name);
                 var subject = EmailDTOModel.Subject;
-                var to = new EmailAddress("dleonardimathey@gmail.com", "Davi");
+                var to = new EmailAddress("businessGmail", "Davi");
                 var plainTextContent = EmailDTOModel.Body;
                 var htmlContent = $"<strong>{EmailDTOModel.Email}</strong><br/><p>{EmailDTOModel.Body}</p>";
                 var msg = MailHelper.CreateSingleEmail(from, to, subject, plainTextContent, htmlContent);

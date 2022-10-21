@@ -1,4 +1,20 @@
+using Azure.Extensions.AspNetCore.Configuration.Secrets;
+using Azure.Identity;
+using Azure.Security.KeyVault.Secrets;
+
 var builder = WebApplication.CreateBuilder(args);
+
+var kvUrl = builder.Configuration["KeyVaultConfig:KVUrl"];
+var tenantId = builder.Configuration["KeyVaultConfig:TenantId"];
+var clientId = builder.Configuration["KeyVaultConfig:ClientId"];
+var clientSecret = builder.Configuration["KeyVaultConfig:ClientSecretId"];
+
+var credential = new ClientSecretCredential(tenantId, clientId, clientSecret);
+var client = new SecretClient(new Uri(kvUrl), credential);
+
+builder.Configuration.AddAzureKeyVault(client, new AzureKeyVaultConfigurationOptions());
+
+Console.WriteLine(builder.Configuration["businessGmail"]);
 
 // Add services to the container.
 builder.Services.AddRazorPages();

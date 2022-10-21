@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "2pXPU/UMuUgmmQDdhwQDz+eiW8bx7NhRZi3dYKhWYZk=",
+  "Hash": "q0QHkwKqAXxWsfvY3zZ+S8NyeiFQ/00XOBaymPKxVZI=",
   "Source": "DaviWebsite",
   "BasePath": "_content/DaviWebsite",
   "Mode": "Default",
@@ -440,6 +440,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\images\\css-3-pngrepo-com.png"
+    },
+    {
+      "Identity": "C:\\C#\\DaviWebsite\\wwwroot\\images\\DaviLeonardiResume.pdf",
+      "SourceId": "DaviWebsite",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\C#\\DaviWebsite\\wwwroot\\",
+      "BasePath": "_content/DaviWebsite",
+      "RelativePath": "images/DaviLeonardiResume.pdf",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\DaviLeonardiResume.pdf"
     },
     {
       "Identity": "C:\\C#\\DaviWebsite\\wwwroot\\images\\DaviLogoTransparent.png",
