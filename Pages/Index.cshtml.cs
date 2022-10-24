@@ -37,12 +37,14 @@ namespace DaviWebsite.Pages
             try
             {
                 ViewData["server-error"] = "False";
-                var businessGmail = _configuration["businessGmail"];
-                var apiKey = _configuration["SendGridApiKey"];
+                //var businessGmail = _configuration["businessGmail"];
+                //var apiKey = _configuration["SendGridApiKey"];
+                var businessGmail = Environment.GetEnvironmentVariable("business_gmail");
+                var apiKey = Environment.GetEnvironmentVariable("api_key");
                 var client = new SendGridClient(apiKey);
-                var from = new EmailAddress("businessGmail", EmailDTOModel.Name);
+                var from = new EmailAddress(businessGmail, EmailDTOModel.Name);
                 var subject = EmailDTOModel.Subject;
-                var to = new EmailAddress("businessGmail", "Davi");
+                var to = new EmailAddress(businessGmail, "Davi");
                 var plainTextContent = EmailDTOModel.Body;
                 var htmlContent = $"<strong>{EmailDTOModel.Email}</strong><br/><p>{EmailDTOModel.Body}</p>";
                 var msg = MailHelper.CreateSingleEmail(from, to, subject, plainTextContent, htmlContent);
