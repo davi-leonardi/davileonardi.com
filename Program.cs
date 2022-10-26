@@ -1,6 +1,21 @@
+using Azure.Extensions.AspNetCore.Configuration.Secrets;
+using Azure.Identity;
+using Azure.Security.KeyVault.Secrets;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
+
+var kvUrl = builder.Configuration["KeyVaultConfig:KVUrl"];
+var tenantId = builder.Configuration["KeyVaultConfig:TenantId"];
+var clientId = builder.Configuration["KeyVaultConfig:ClientId"];
+var clientSecret = builder.Configuration["KeyVaultConfig:ClientSecretId"];
+
+var credential = new ClientSecretCredential(tenantId, clientId, clientSecret);
+var client = new SecretClient(new Uri(kvUrl), credential);
+
+builder.Configuration.AddAzureKeyVault(client, new AzureKeyVaultConfigurationOptions());
+
 builder.Services.AddRazorPages();
 
 var app = builder.Build();
