@@ -39,8 +39,10 @@ namespace DaviWebsite.Pages
                 ViewData["server-error"] = "False";
 
 
-                var businessGmail = _configuration["businessGmail"];
-                var apiKey = _configuration["SendGridApiKey"];
+                //var businessGmail = _configuration["businessGmail"];
+                //var apiKey = _configuration["SendGridApiKey"];
+                var businessGmail = Environment.GetEnvironmentVariable("BUSINESS_GMAIL");
+                var apiKey = Environment.GetEnvironmentVariable("API_KEY");
 
                 var client = new SendGridClient(apiKey);
                 var from = new EmailAddress(businessGmail, EmailDTOModel.Name);
