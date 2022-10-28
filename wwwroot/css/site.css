@@ -564,8 +564,11 @@ label{
     color:white;
 }
 
-#server-alert {
-    position:fixed;
+.email-alert{
+    width: 20%;
+    position: absolute;
+    right: 1%;
+    top: 1%;
 }
 
 @-webkit-keyframes mouse-wheel {

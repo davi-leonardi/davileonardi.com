@@ -4,11 +4,19 @@
     ViewData["Title"] = "Home page";
 }
 
-@if(ViewData["server-error"] == "True"){
-    <div class="alert alert-danger alert-dismissible fade show" role="alert" id="server-alert">
+@if (TempData["server-error"] is not null && TempData["server-error"].ToString() == "True")
+{
+    <div class="alert alert-danger alert-dismissible fade show email-alert" role="alert">
       <div>
         Server error! Email not submitted.                     
       </div>
+      <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+    </div>
+}
+else if (TempData["server-error"] is not null && TempData["server-error"].ToString() == "False")
+{
+    <div class="alert alert-success alert-dismissible fade show email-alert" role="alert">
+      <strong>Email submitted!</strong>
       <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
     </div>
 }
@@ -192,7 +200,7 @@
                     <h4>Inventory Management System</h4>
                     <p>SQLServer, EF Core, Identity, deployed on Azure.</p>
                     <div>
-                        <a class="projects-link" href="" target="_blank">Deployment</a>
+                        <a class="projects-link" href="https://inventorymansys20220814134759.azurewebsites.net" target="_blank">Deployment</a>
                         <a class="article-github" href="https://github.com/davi-leonardi/InventoryManagementSystem" target="_blank">
                             <i title="Github" style="color:inherit;">  
                                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
@@ -272,7 +280,6 @@
             </article>
         </div>
         <p class="m-0 html-text">&lt/div&gt</p>
-        @*<p class="m-0 html-text">&lt/section&gt</p>*@
     </section>
     <p id="section-closer3" class="m-0 ps-4 html-text">&lt/section&gt</p>
 </div>

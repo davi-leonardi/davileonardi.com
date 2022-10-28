@@ -31,13 +31,3 @@ C:\C#\DaviWebsite\obj\Debug\net6.0\DaviWebsite.csproj.CopyComplete
 C:\C#\DaviWebsite\bin\Debug\net6.0\Newtonsoft.Json.dll
 C:\C#\DaviWebsite\bin\Debug\net6.0\SendGrid.dll
 C:\C#\DaviWebsite\bin\Debug\net6.0\StarkbankEcdsa.dll
-C:\C#\DaviWebsite\bin\Debug\net6.0\Azure.Core.dll
-C:\C#\DaviWebsite\bin\Debug\net6.0\Azure.Extensions.AspNetCore.Configuration.Secrets.dll
-C:\C#\DaviWebsite\bin\Debug\net6.0\Azure.Identity.dll
-C:\C#\DaviWebsite\bin\Debug\net6.0\Azure.Security.KeyVault.Secrets.dll
-C:\C#\DaviWebsite\bin\Debug\net6.0\Microsoft.Bcl.AsyncInterfaces.dll
-C:\C#\DaviWebsite\bin\Debug\net6.0\Microsoft.Identity.Client.dll
-C:\C#\DaviWebsite\bin\Debug\net6.0\Microsoft.Identity.Client.Extensions.Msal.dll
-C:\C#\DaviWebsite\bin\Debug\net6.0\System.Memory.Data.dll
-C:\C#\DaviWebsite\bin\Debug\net6.0\System.Security.Cryptography.ProtectedData.dll
-C:\C#\DaviWebsite\bin\Debug\net6.0\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll

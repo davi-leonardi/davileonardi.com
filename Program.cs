@@ -1,8 +1,12 @@
+using DaviWebsite.Services;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 
 builder.Services.AddRazorPages();
+
+builder.Services.AddSingleton<IEmailService, SendinBlueService>();
 
 var app = builder.Build();
 
