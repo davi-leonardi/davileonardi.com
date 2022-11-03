@@ -31,7 +31,6 @@ namespace DaviWebsite.Pages
             try
             {
                 TempData["server-error"] = "False";
-                TempData["test"] = "False";
 
                 var html = new StringBuilder();
                 html.Append($"<p>{EmailDTOModel.Body}</p>");
@@ -41,7 +40,6 @@ namespace DaviWebsite.Pages
             catch(Exception ex)
             {
                 Console.WriteLine(ex.Message);
-                TempData["test"] = ex.Message;
                 TempData["server-error"] = "True";
                 return RedirectToAction("Index");
             }
