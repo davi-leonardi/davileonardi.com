@@ -171,16 +171,16 @@ body {
     color: var(--cyberpunk-blue3);
 }
 
-i:hover {
+.sidenav_bottom a i:hover {
     color: var(--cyberpunk-blue3);
 }
 
 hr {
-    height:2px;
-    border-width:0;
-    color:gray;
-    background-color:gray;
-    margin:0;
+    height: 2px;
+    border-width: 0;
+    color: gray;
+    background-color: gray;
+    margin: 0;
 }
 
 .main-page{
@@ -553,7 +553,8 @@ label{
 }
 
 .copyright-footer{
-    display:block;
+    display:flex;
+    flex-direction:column;
     margin-top: 20px;
     margin-bottom: 20px;
 }
@@ -561,7 +562,7 @@ label{
 #copyright-text {
     margin: 0px;
     text-align:center;
-    color:white;
+    color:var(--silver-color);
 }
 
 .email-alert{
@@ -569,6 +570,15 @@ label{
     position: absolute;
     right: 1%;
     top: 1%;
+}
+
+.bottom-icons {
+    display: flex;
+    flex-direction: row;
+    color: var(--silver-color);
+    padding: 0 35% 10px 35%;
+    justify-content:space-evenly;
+    text-align:center;
 }
 
 @-webkit-keyframes mouse-wheel {
